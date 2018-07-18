@@ -1,0 +1,87 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+    width: 100%;
+}
+body{
+    height: 100%;
+    width: 100%;
+    background-color: #f7f7f7;
+}
+#header{
+    font-size:200%;
+    background-color: #3b2751;
+    color:royalblue;
+    text-align: center;
+    height: 10%;
+    width: 100%;
+}
+#b_chat{
+    height:80%;
+    width:85%;
+    float:left;
+    background-color:white;
+    overflow: auto;
+    font-size:130%;
+}
+#clients{
+    height:80%;
+    width:15%;
+    float:right;
+    background-color:aquamarine;
+    overflow: auto;
+}
+form{
+    height:10%;
+    width:100%;
+}
+.p_chat{
+    height:100%;
+    width:85%;
+    font-size:130%;
+}
+.buttons {
+    width: 15%;
+    height: 100%;
+    text-decoration: none;
+    color: #a675b3;
+    text-align: center;
+    display: block;
+    font-size: 1.1em;
+    float:right;
+    border-radius: 3%;
+  }
+  
+  .buttons:not(.active) {
+    box-shadow: inset 0 1px 1px rgba(111, 55, 125, 0.8), inset 0 -1px 0px rgba(63, 59, 113, 0.2), 0 9px 16px 0 rgba(0, 0, 0, 0.3), 0 4px 3px 0 rgba(0, 0, 0, 0.3), 0 0 0 1px #150a1e;
+    background-image: linear-gradient(#3b2751, #271739);
+    text-shadow: 0 0 21px rgba(223, 206, 228, 0.5), 0 -1px 0 #311d47;
+  }
+  
+  .buttons:not(.active):hover,
+  .buttons:not(.active):focus {
+    transition: color 200ms linear, text-shadow 500ms linear;
+    color: #fff;
+    text-shadow: 0 0 21px rgba(223, 206, 228, 0.5), 0 0 10px rgba(223, 206, 228, 0.4), 0 0 2px #2a153c;
+  }
+  .buttons:not(:hover) {
+      transition: 0.6s;
+  }
+  @media screen and (max-width:450px){
+    .buttons {
+        width: 30%;
+    }
+    .p_chat{
+        width: 70%;
+    }
+    #b_chat{
+        width: 70%;
+    }
+    #clients{
+        width: 30%;
+    }
+  }

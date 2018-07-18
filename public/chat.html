@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>chat</title>
+        <link rel="stylesheet" type="text/css" href="s_chat.css" >
+    </head>
+    <body>
+        <div id='header'></div>
+        <div id='b_chat' class="bloks">
+        </div>
+        <div id='clients' class="bloks"></div>
+        <form>
+                <input type='textarea' class='p_chat'>
+                <input type="button" value="отправить" class='buttons'>
+        </form>
+        <script src="socket.io.js"></script>
+        <script src="front.js"></script>
+    </body>
+</html>
